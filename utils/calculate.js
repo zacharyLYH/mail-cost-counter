@@ -9,7 +9,8 @@ For instance, if deliveryType = "express", then the deliveryTypeFactor = 7, sinc
 Hint: Use the `.length()` method to get the length of the string.
 */
 function deliveryTypeFactor(deliveryType) {
-    return deliveryType.length;
+    //WIP
+    return 0;
 }
 
 /*
@@ -28,18 +29,9 @@ distanceFactor = 6-1 = 5
 This is because PHI is in the 6th position while SG is in the 1st position of the array
 */
 function distanceFactor(from, to) {
+    //WIP
     const countries = countriesList;
-    let originIndex = 0;
-    let destIndex = 0;
-    for (let i = 0; i < countries.length; i++) {
-        if (countries[i] == from) {
-            originIndex = i;
-        }
-        if (countries[i] == to) {
-            destIndex = i;
-        }
-    }
-    return Math.max(originIndex, destIndex) - Math.min(originIndex, destIndex);
+    return 0;
 }
 
 /*
@@ -51,11 +43,8 @@ Letter, 100grams, packageTypeAndWeightFactor = 100/10 = 10
 Parcel, 1000grams, packageTypeAndWeightFactor = 1.5*(1000/10) = 1.1*100 = 110
 */
 function packageTypeAndWeightFactor(packageType, weight) {
-    if (packageType == "letter") {
-        return weight / 10;
-    } else {
-        return 1.5 * (weight / 10);
-    }
+    //WIP
+    return 0;
 }
 
 /*
@@ -67,18 +56,8 @@ Tax percentages:
 "uk", "cn", "phi": 2%
 */
 function calculateTax(baseCost, deliveryFrom) {
-    switch (deliveryFrom) {
-        case "my":
-            return baseCost * 0.05;
-        case "sg":
-            return baseCost * 0.06;
-        case "aus":
-            return baseCost * 0.06;
-        case "usa":
-            return baseCost * 0.01;
-        default:
-            return baseCost * 0.02;
-    }
+    //WIP
+    return 0;
 }
 
 /*
@@ -112,22 +91,10 @@ function calculateCosts(
     deliveryTo,
     deliveryType
 ) {
-    const packageTypeAndWeightFactorResult = packageTypeAndWeightFactor(
-        packageType,
-        itemWeight
-    );
-    // console.log(packageTypeAndWeightFactorResult);
-    const distanceFactorResult = distanceFactor(deliveryFrom, deliveryTo);
-    // console.log(distanceFactorResult);
-    const deliveryTypeFactorResult = deliveryTypeFactor(deliveryType);
-    // console.log(deliveryTypeFactorResult);
-    const baseCost =
-        packageTypeAndWeightFactorResult *
-        distanceFactorResult *
-        deliveryTypeFactorResult;
+    //WIP
+    const baseCost = 0;
     const taxAmount = calculateTax(baseCost, deliveryFrom);
-    const finalAmount = baseCost + taxAmount;
-    // console.log(baseCost, taxAmount, finalAmount);
+    const finalAmount = 0;
     return {
         baseCost,
         taxAmount,
