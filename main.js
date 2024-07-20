@@ -70,7 +70,7 @@ function printReceipt(details) {
     console.log(`--------------------`);
     console.log(`Final Amount: $${details.finalAmount.toFixed(2)}`);
     console.log("--------------------");
-    console.log("Thank you")
+    console.log("Thank you and see you again!");
 }
 
 main();
